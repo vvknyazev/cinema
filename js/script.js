@@ -1,25 +1,25 @@
 new Swiper('.image-slider', {
 
-    navigation:{
+    navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
     },
 
     simulateTouch: false,
 
-    keyboard:{
+    keyboard: {
         enabled: true,
         onlyInViewport: true,
     },
 
-    mousewheel:{
+    mousewheel: {
         sensitivity: 1,
     },
     autoheight: true,
 
     slidesPerView: 3.5,
-
-
+    slidesPerGroup: 2,
 
     speed: 600,
+
 });
