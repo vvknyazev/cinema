@@ -23,3 +23,23 @@ new Swiper('.image-slider', {
     speed: 600,
 
 });
+
+function displayTrailer() {
+    //console.log(this);
+    console.log(this.dataset.name);
+    let videos = document.querySelectorAll(".trailer");
+    
+    videos.forEach(video => {
+        console.log(video);
+        if (this.dataset.name == video.dataset.name){
+            video.classList.remove("none");
+           
+        }        
+    })
+}
+
+let btn = document.querySelectorAll(".play-trailer");
+
+btn.forEach(b =>{
+    b.addEventListener("click", displayTrailer);
+})
