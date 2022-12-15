@@ -153,14 +153,22 @@ body {
 
 .trailer{
     position: fixed;
-    z-index: 300;
-    color: gray;
-    top: 0%;
-    left: 1.5%;
     width: 100%;
     height: 100%;
-    overflow: auto;
-
+    top: 0;
+    left: 0;
+    z-index: 103;
+    background: rgba(34,31,31,.75);
+}
+.trailer-video{
+    top: 60px;
+    width: 100%;
+    height: calc(100% - 60px);
+    background: #343634;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     background-color: rgba(0,0,0,0.4);
 }
 
