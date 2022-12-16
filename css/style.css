@@ -147,7 +147,7 @@ body {
 }
 
 .slide-mask__play img:hover {
-    width: 8%;
+    width: 7.5%;
     transition: all ease-out 0.5s;
 }
 
@@ -157,7 +157,7 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 103;
+    z-index: 30;
     background: rgba(34,31,31,.75);
 }
 .trailer-video{
@@ -181,10 +181,25 @@ a{
 .close{
     color: #aaa;
     float: right;
-    font-size: 36px;
+    font-size: 50px;
     font-weight: bold;
-    padding: 20px;
+    margin: 5.5px 15px 0px 0px;
+    padding-right: 10px;
+    padding-left: 9px;
     position: absolute;
     right: 25px;
     cursor: pointer;
+    font-weight: 900;
+    border-radius: 15px;
+}
+.close:hover{
+    background-color: rgba(128, 128, 128, 0.2);
+    transition: all 0.25s;
+}
+.trailer__header{
+    z-index: 31;
+    background-color: #221f1f;
+    position: absolute;
+    width: 100%;
+    height: 60px;
 }
