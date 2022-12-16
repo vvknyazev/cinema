@@ -44,6 +44,14 @@ function displayTrailer() {
                 iFrame[0].setAttribute('src', '');
                 iFrame[0].setAttribute('src', url);
             });
+
+            window.addEventListener("keydown", function (e) {
+                if (e.key === "Escape") {
+                    video.classList.add("none");
+                    iFrame[0].setAttribute('src', '');
+                    iFrame[0].setAttribute('src', url);
+                }
+            });
         }
     })
 }
