@@ -26,20 +26,30 @@ new Swiper('.image-slider', {
 
 function displayTrailer() {
     //console.log(this);
-    console.log(this.dataset.name);
+    //console.log(this.dataset.name);
     let videos = document.querySelectorAll(".trailer");
-    
+
     videos.forEach(video => {
-        console.log(video);
-        if (this.dataset.name == video.dataset.name){
+        //console.log(video);
+        if (this.dataset.name == video.dataset.name) {
             video.classList.remove("none");
-           
-        }        
+
+            let iFrame = video.getElementsByTagName('iframe');
+            let url = iFrame[0].getAttribute('src');
+
+            let closeItem = video.querySelector(".close");
+
+            closeItem.addEventListener("click", function () {
+                video.classList.add("none");
+                iFrame[0].setAttribute('src', '');
+                iFrame[0].setAttribute('src', url);
+            });
+        }
     })
 }
 
 let btn = document.querySelectorAll(".play-trailer");
 
-btn.forEach(b =>{
+btn.forEach(b => {
     b.addEventListener("click", displayTrailer);
-})
+});
