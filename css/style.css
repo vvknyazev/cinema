@@ -119,7 +119,7 @@ body {
 }
 
 .image-slider__image img {
-    min-height: 92vh;
+    height: 92vh;
     width: 100%;
 }
 .swiper-button-prev,
