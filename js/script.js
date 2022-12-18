@@ -26,13 +26,13 @@ const swiper = new Swiper('.image-slider', {
             slidesPerView: 1,
             slidesPerGroup: 1,
         },
-        1050: {
+        700: {
             slidesPerView: 2,
         },
-        1300: {
+        1000: {
             slidesPerView: 3,
         },
-        1400: {
+        1300: {
             slidesPerView: 3.5,
         },
     },
