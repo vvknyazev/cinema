@@ -1,4 +1,4 @@
-new Swiper('.image-slider', {
+const swiper = new Swiper('.image-slider', {
 
     navigation: {
         nextEl: '.swiper-button-next',
@@ -21,6 +21,22 @@ new Swiper('.image-slider', {
     slidesPerGroup: 2,
 
     speed: 600,
+    breakpoints: {
+        350: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+        },
+        1050: {
+            slidesPerView: 2,
+        },
+        1300: {
+            slidesPerView: 3,
+        },
+        1400: {
+            slidesPerView: 3.5,
+        },
+    },
+
 
 });
 
@@ -66,3 +82,29 @@ let btn = document.querySelectorAll(".play-trailer");
 btn.forEach(b => {
     b.addEventListener("click", displayTrailer);
 });
+
+const btnMenu = document.querySelector(".btn-menu");
+const menuBack = document.querySelector(".menu__back-btn");
+let content = document.querySelector(".content");
+const header = document.querySelector(".header");
+const menuBody = document.querySelector(".menu__body");
+const veil = document.querySelector(".veil");
+
+btnMenu.addEventListener("click", function (e) {
+    content.classList.add("blur");
+    header.classList.add("blur");
+    menuBody.classList.add("_active");
+    veil.classList.remove("none");
+   // document.body.classList.add("ovflow");
+});
+
+menuBack.addEventListener("click", function(){
+    content.classList.remove("blur");
+    header.classList.remove("blur");
+    menuBody.classList.remove("_active");
+    veil.classList.add("none");
+    //document.body.classList.remove("ovflow");
+})
+
+
+

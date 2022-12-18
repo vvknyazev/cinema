@@ -32,6 +32,59 @@ a {
     height: 60px;
 }
 
+.menu__back{
+    width: 15%;
+    cursor: pointer;
+}
+.ovflow{
+    overflow: hidden;
+}
+.none{
+    display: none;
+}
+.menu__body{
+    position: fixed;
+    width: 17%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background-color: #282424;
+    padding: 15px 30px 30px 20px;
+    transition: all 0.35s ease;
+    overflow: auto;
+    z-index: 300;
+}
+.menu__body._active{
+    left: 0;    
+}
+.menu__list{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: -.2px;
+    line-height: 60px;
+    color: #fff;
+}
+.menu__item{
+    font-size: 24px;
+    padding-top: 50px;
+}
+.blur{
+    filter: blur(10px);
+}
+.cover{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background-color: rgba(34,31,31,.5);
+}
+
 .header-login-ico {
     float: right;
     transition: all 1s;
@@ -67,18 +120,17 @@ body {
 
 .image-slider__image img {
     min-height: 92vh;
-    width: 435px;
+    width: 100%;
 }
 .swiper-button-prev,
 .swiper-button-next {
     background-color: red;
-    width: 5%;
-    height: 10.5%;
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
     border: solid 5px black;
     transition: all 0.25s;
 }
-
 .swiper-button-next::after,
 .swiper-button-prev::after {
     color: #fff;
@@ -105,6 +157,7 @@ body {
     font-family: 'Lato', sans-serif;
     transition: all 2s;
     left: 0.4%;
+    
 }
 
 .swiper-slide:hover .slide-mask {
@@ -192,6 +245,9 @@ a{
     font-weight: 900;
     border-radius: 15px;
 }
+.close h3{
+    font-size: 20px;
+}
 .close:hover{
     background-color: rgba(128, 128, 128, 0.2);
     transition: all 0.25s;
@@ -202,4 +258,36 @@ a{
     position: absolute;
     width: 100%;
     height: 60px;
+}
+.mask-name{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    background: rgb(0,0,0);
+    background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(11,11,11,1) 19%, rgba(10,10,12,1) 29%, rgba(2,2,17,0) 100%);
+    opacity: 1;
+    text-align: center;
+    position: absolute;
+    bottom: 0%;
+    z-index: 500;
+}
+.mask-name a{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 60px;
+    font-weight: 550;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.7px;
+}
+
+.veil{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background-color: rgba(34,31,31,.5);
 }
