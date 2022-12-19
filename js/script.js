@@ -110,7 +110,7 @@ btnMenu.addEventListener("click", openMenu);
 menuBack.addEventListener("click", closeMenu);
 veil.addEventListener("click", closeMenu);
 
-window.addEventListener("keydown", function (e) {
+window.addEventListener("keyup", function (e) {
     if (e.key == 'Escape') {
         closeMenu();
     }
