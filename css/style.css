@@ -159,19 +159,19 @@ body {
     
 }
 
-.swiper-slide:hover .slide-mask {
+.hover-effect:hover .slide-mask {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.swiper-slide:hover {
+.hover-effect:hover {
     animation-name: ani;
     animation-duration: 1.1s;
     animation-fill-mode: both;
 }
 
-.swiper-slide:hover .image-slider__image {
+.hover-effect:hover .image-slider__image {
     filter: blur(4px);
 }
 
@@ -272,13 +272,11 @@ a{
     bottom: 0%;
     z-index: 500;
 }
-.mask-name a{
-    color: white;
-    font-size: 25px;
-    margin-bottom: 60px;
-    font-weight: 550;
-    font-family: 'Lato', sans-serif;
-    letter-spacing: 0.7px;
+
+
+.film-name a:hover{
+    transition: all ease 0.5s;
+    color: red;
 }
 
 .veil{
@@ -289,4 +287,19 @@ a{
     height: 100%;
     z-index: 20;
     background-color: rgba(34,31,31,.5);
+}
+.film-name{
+    position: absolute;
+    bottom: 55px;
+    width: 100%;
+    font-size: 25px;
+    color: white;
+    z-index: 99999;
+    text-align: center;
+}
+.film-name a{
+    font-weight: 550;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.7px;
+    
 }
