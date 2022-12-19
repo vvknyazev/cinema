@@ -90,20 +90,30 @@ const header = document.querySelector(".header");
 const menuBody = document.querySelector(".menu__body");
 const veil = document.querySelector(".veil");
 
-btnMenu.addEventListener("click", function (e) {
-    content.classList.add("blur");
-    header.classList.add("blur");
-    menuBody.classList.add("_active");
-    veil.classList.remove("none");
-   // document.body.classList.add("ovflow");
-});
-
-menuBack.addEventListener("click", function(){
+function closeMenu() {
     content.classList.remove("blur");
     header.classList.remove("blur");
     menuBody.classList.remove("_active");
     veil.classList.add("none");
     //document.body.classList.remove("ovflow");
+}
+function openMenu() {
+    content.classList.add("blur");
+    header.classList.add("blur");
+    menuBody.classList.add("_active");
+    veil.classList.remove("none");
+    // document.body.classList.add("ovflow");
+}
+
+
+btnMenu.addEventListener("click", openMenu);
+menuBack.addEventListener("click", closeMenu);
+veil.addEventListener("click", closeMenu);
+
+window.addEventListener("keydown", function (e) {
+    if (e.key == 'Escape') {
+        closeMenu();
+    }
 })
 
 

@@ -44,7 +44,7 @@ a {
 }
 .menu__body{
     position: fixed;
-    width: 17%;
+    width: 270px;
     height: 100%;
     top: 0;
     left: -100%;
@@ -60,7 +60,6 @@ a {
 .menu__list{
     display: flex;
     justify-content: center;
-    text-align: center;
     margin-top: 40px;
     font-weight: 500;
     font-family: 'Lato', sans-serif;
