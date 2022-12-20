@@ -1,6 +1,7 @@
 .content {
     display: flex;
-    height: 100%;
+    min-height: 100vh;
+    width: 100%;
     font-family: 'Lato', sans-serif;
     background-color: rgb(230, 230, 230);
 }
@@ -18,13 +19,13 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;   
-    margin-top: 70px; 
+    margin-top: 50px; 
 }
 .form{
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 70px;
+    padding: 70px 0 70px 0;
     align-items: center;
 }
 
@@ -36,10 +37,10 @@
     padding-top: 50px;
 }
 .form__password-show{
-    position: relative;   
+    position: absolute;   
     opacity: 0.5;
-    bottom: 36%;
-    left: 85%;
+    bottom: 54%;
+    right: 8%;
 }
 .form__password-show img{
     max-width: 23px;
@@ -49,7 +50,7 @@
     cursor: pointer;
 }
 .form__submit{
-    padding-top: 25px;
+    padding-top: 50px;
 }
 .btn{
     width: 315px;
@@ -103,7 +104,7 @@ h2{
 .form__social__title{
     color: #828282;
     position: relative;
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
 }
 .line{
@@ -123,9 +124,10 @@ h2{
 }
 
 .form__social__button{
-    margin-top: 40px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
+    
 }
 
 .sign-btn{
@@ -160,4 +162,16 @@ h2{
     width: 250px;
     right: 22%;
     top: 22%;
+}
+
+@media (max-width: 1049px){
+    .right-side{
+        display: none;
+    }
+    .left-side{
+        padding-top: 100px;
+    }
+    .back-btn{
+        top: 4%;
+    }
 }
