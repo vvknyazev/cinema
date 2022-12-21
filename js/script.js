@@ -22,12 +22,16 @@ const swiper = new Swiper('.image-slider', {
 
     speed: 600,
     breakpoints: {
-        350: {
+        300: {
             slidesPerView: 1,
             slidesPerGroup: 1,
         },
+        450: {
+            slidesPerView: 1.7,
+            slidesPerGroup: 1,
+        },
         700: {
-            slidesPerView: 2,
+            slidesPerView: 2.5,
         },
         1000: {
             slidesPerView: 3,
