@@ -31,45 +31,11 @@ a {
 .logo {
     height: 60px;
 }
-
-.menu__back{
-    width: 15%;
-    cursor: pointer;
-}
 .ovflow{
     overflow: hidden;
 }
 .none{
     display: none;
-}
-.menu__body{
-    position: fixed;
-    width: 270px;
-    height: 100%;
-    top: 0;
-    left: -100%;
-    background-color: #282424;
-    padding: 15px 30px 30px 20px;
-    transition: all 0.35s ease;
-    overflow: auto;
-    z-index: 300;
-}
-.menu__body._active{
-    left: 0;    
-}
-.menu__list{
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    font-weight: 500;
-    font-family: 'Lato', sans-serif;
-    letter-spacing: -.2px;
-    line-height: 60px;
-    color: #fff;
-}
-.menu__item{
-    font-size: 24px;
-    padding-top: 50px;
 }
 .blur{
     filter: blur(10px);
@@ -300,6 +266,74 @@ a{
 .film-name a{
     font-weight: 550;
     font-family: 'Lato', sans-serif;
-    letter-spacing: 0.7px;
-    
+    letter-spacing: 0.7px;    
+}
+.menu__back{
+    width: 15%;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.menu__body{
+    position: fixed;
+    width: 270px;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background-color: #282424;
+    padding: 15px 30px 30px 0px;
+    transition: all 0.35s ease;
+    overflow: auto;
+    z-index: 300;
+}
+.menu__body._active{
+    left: 0;    
+}
+.menu__list{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: -.2px;
+    line-height: 60px;
+    color: #fff;
+}
+.menu__item{
+    font-size: 24px;
+    margin-top: 50px;
+}
+.menu__login{
+    display: flex;
+    margin-top: 30px;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 57px;
+}
+.menu__login-title{
+    color: rgba(255,255,255,.5);
+    margin-bottom: 13px;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.2px; 
+    font-family: 'Lato', sans-serif;
+    padding-right: 10px;
+}
+.menu__login-btn{
+    background-color: red;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    display: inline-flex;
+    padding: 5px 20px 5px 5px;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+.menu__login-btn:hover{
+    transition: all ease 0.33s;
+    opacity: 0.8;
 }
