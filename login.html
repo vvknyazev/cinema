@@ -13,50 +13,55 @@
 <body>
 
     <div class="wripper">
+        <main>
+            <div class="content">
+                <div class="left-side">
+                    <a href="index.html" class="back-btn"><img src="/images/ico/back.png" alt="back-btn"></a>
+                    <div class="header">
+                        <h2>Log In</h2>
+                    </div>
 
-        <div class="content">
-            <div class="left-side">
-                <a href="index.html" class="back-btn"><img src="/images/ico/back.png" alt="back-btn"></a>
-                <div class="header">
-                    <h2>Log In</h2>
+                    <div class="form">
+                        <div class="form__email">
+                            <label for="email">Login Id <br> </label>
+                            <input type="text" name="email" placeholder="Email">
+
+                        </div>
+
+                        <div class="form__password">
+                            <label for="password">Password <br></label>
+                            <input type="password" name="password" placeholder="••••••••••" class="input-password"
+                                maxlength="30">
+                            <div class="form__password-show">
+                                <img src="/images/ico/show-pass.png" alt="show-pass" class="show-password">
+                            </div>
+                        </div>
+                        <div class="form__submit">
+                            <button class="btn">Log in</button>
+                        </div>
+                        <div class="form__social">
+                            <div class="form__social__title">
+                                <div class="line"></div>
+                                <span class="title">OR</span>
+                            </div>
+                            <div class="form__social__button">
+                                <button class="sign-btn"><img src="/images/ico/google.png" alt="google"
+                                        class="sign-btn-ico">Sign in with Google</button>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
-                <div class="form">
-                    <div class="form__email">
-                        <label for="email">Login Id <br> </label>
-                        <input type="text" name="email" placeholder="Email">
 
-                    </div>
-
-                    <div class="form__password">
-                        <label for="password">Password <br></label>
-                        <input type="password" name="password" placeholder="••••••••••" class="input-password" maxlength="30">
-                        <div class="form__password-show">
-                            <img src="/images/ico/show-pass.png" alt="show-pass" class="show-password">
-                        </div>
-                    </div>
-                    <div class="form__submit">
-                        <button class="btn">Log in</button>
-                    </div>
-                    <div class="form__social">
-                        <div class="form__social__title">
-                            <div class="line"></div>
-                            <span class="title">OR</span>
-                        </div>
-                        <div class="form__social__button">
-                            <button class="sign-btn"><img src="/images/ico/google.png" alt="google" class="sign-btn-ico">Sign in with Google</button>
-                        </div>
-                    </div>
+                <div class="right-side">
+                    <img src="/images/people.png" alt="people">
                 </div>
-
 
             </div>
-            <div class="right-side">
-                <img src="/images/people.png" alt="people">
-            </div>
-        </div>
-
+        </main>
     </div>
-    <script src="/js/login/script.js"></script>
+    <script src="/js/login/showPassword.js"></script>
 </body>
 
 </html>
