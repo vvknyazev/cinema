@@ -156,12 +156,14 @@ h2{
     flex: 1;
     background-color: #221f1fe9;
     border-top-left-radius: 50px;
+    display: flex;
+    align-items: center;
+    
 }
 .right-side img{
     position: absolute;
-    width: 250px;
+    width: 300px;
     right: 22%;
-    top: 22%;
 }
 
 @media (max-width: 1049px){
