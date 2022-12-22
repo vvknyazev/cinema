@@ -1,0 +1,119 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.film {
+    display: flex;
+    height: 150vh;
+}
+.film-poster {
+    background-color: #221f1f;
+    flex: 1;
+}
+.wrap-poster{
+    position: sticky;
+    top: 100px;
+    z-index: 1;
+}
+.film-about {
+    flex: 2;
+    padding: 0 40px;
+    margin-top: 50px;
+}
+
+.film-schedule {
+    flex: 1;
+    width: 350px;
+    min-width: 350px;
+    position: sticky;
+    top: 100px;
+    height: calc(100vh - 220px);
+    background-color: #2f2b2b;
+    border-radius: 10px;
+    z-index: 1;
+    margin-right: 50px;
+}
+
+.film-poster__image {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.poster {
+    width: 280px;
+    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.6);
+}
+
+.film-poster__trailer {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.play-trailer {
+    height: 55px;
+    line-height: 56px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, .15);
+    color: #fff;
+    font-weight: 700;
+    padding-left: 7%;
+    padding-right: 7%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.play-trailer::before {
+    content: "";
+    float: left;
+    top: 17px;
+    position: relative;
+    border: 10px solid rgba(0, 0, 0, 0);
+    border-left: 14px solid #fff;
+    margin-right: 5px;
+}
+
+.play-trailer:hover {
+    transition: all ease 0.3s;
+    background-color: rgb(224, 27, 27);
+}
+
+.film-about h2 {
+    font-size: 40px;
+    line-height: 45px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.movie_credentials {
+    margin-bottom: 50px;
+}
+
+.movie_credentials li {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 550;
+    margin-bottom: 15px;
+    overflow: hidden;    
+}
+.movie_credentials a:hover {
+    color: red;
+    transition: all ease 0.1s;
+}
+.movie_credentials a{
+    text-decoration-line:underline;
+    transition: all ease 0.1s;
+}
+.key {
+    float: left;
+    width: 180px;
+    color: #fff;
+}
+
+.val {
+    color: rgba(255, 255, 255, .5);
+    float: left;
+    width: calc(100% - 180px);
+}
