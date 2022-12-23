@@ -343,3 +343,8 @@ a{
     transition: all ease 0.33s;
     opacity: 0.8;
 }
+@media (max-width: 400px) {
+    .image-slider__image img {
+        height: 85vh;
+    }
+}
