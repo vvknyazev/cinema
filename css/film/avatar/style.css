@@ -4,17 +4,20 @@ body {
 
 .film {
     display: flex;
-    height: 150vh;
+    height: 170vh;
 }
+
 .film-poster {
     background-color: #221f1f;
     flex: 1;
 }
-.wrap-poster{
+
+.wrap-poster {
     position: sticky;
     top: 100px;
     z-index: 1;
 }
+
 .film-about {
     flex: 2;
     padding: 0 40px;
@@ -24,14 +27,14 @@ body {
 .film-schedule {
     flex: 1;
     width: 350px;
-    min-width: 350px;
     position: sticky;
     top: 100px;
-    height: calc(100vh - 220px);
+    height: 230px;
     background-color: #2f2b2b;
     border-radius: 10px;
     z-index: 1;
     margin-right: 50px;
+    overflow: auto;
 }
 
 .film-poster__image {
@@ -87,25 +90,28 @@ body {
     margin-bottom: 50px;
 }
 
-.movie_credentials {
+.film-data {
     margin-bottom: 50px;
 }
 
-.movie_credentials li {
+.film-data li {
     font-size: 16px;
     line-height: 20px;
     font-weight: 550;
     margin-bottom: 15px;
-    overflow: hidden;    
+    overflow: hidden;
 }
-.movie_credentials a:hover {
+
+.film-data a:hover {
     color: red;
     transition: all ease 0.1s;
 }
-.movie_credentials a{
-    text-decoration-line:underline;
+
+.film-data a {
+    text-decoration-line: underline;
     transition: all ease 0.1s;
 }
+
 .key {
     float: left;
     width: 180px;
@@ -116,4 +122,159 @@ body {
     color: rgba(255, 255, 255, .5);
     float: left;
     width: calc(100% - 180px);
+}
+
+.film-about__description {
+    color: white;
+}
+
+.film-about__description h3 {
+    font-size: 20px;
+    line-height: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.film-about__description p {
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    letter-spacing: 0.5px;
+}
+
+.film-others {
+    color: white;
+}
+
+.film-others h3 {
+    font-size: 20px;
+    line-height: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.film-others__posters {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1280px) {
+    .film-others__posters {
+        flex-wrap: wrap;
+    }
+
+    .film-others__poster {
+        margin: 5%;
+    }
+}
+
+.film-others__poster {
+    margin-left: 3%;
+    cursor: pointer;
+}
+
+.film-others__poster img {
+    width: 150px;
+    margin-bottom: 10px;
+    height: 90%;
+    border-radius: 15px;
+}
+
+.film-others__poster h4 {
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-align: center;
+    transition: all ease 0.3s;
+}
+
+.film-others__poster:hover h4 {
+    color: red;
+    transition: all ease 0.3s;
+}
+
+.poster-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.film-schedule-title {
+    padding: 25px;
+    background-color: #3d3737;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+}
+
+.heading {
+    font-size: 19px;
+    font-weight: 600;
+    color: #fff;
+
+}
+
+.film-schedule-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.time span {
+    color: red;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    display: inline-block;
+    letter-spacing: -1.5px;
+}
+
+.tag {
+    top: 20px;
+    letter-spacing: -1px;
+    font-size: 9px;
+    color: #fff;
+    text-align: center;
+}
+
+.time-block {
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    margin: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 1012px) {
+    .film {
+        display: block;
+        height: 170vh;
+    }
+    .film-poster {
+        background-color: #221f1f;    
+    }
+    .film-about h2 {
+        text-align: center;
+        font-size: 28px;
+    }
+    .film-schedule {
+        margin: 0 auto;
+    }
+    .poster{
+        width: 100%;
+    }
+    .content{
+        padding-top: 10px;
+    }
+    .film-data li {
+        font-size: 14px;
+        line-height: 15px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .film-about__description p{
+        text-align: justify;
+    }
 }
