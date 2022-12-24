@@ -300,6 +300,7 @@ a{
 .menu__item{
     font-size: 24px;
     transition: all 0.3s;
+    text-decoration: line-through;
 }
 .menu__list-ul{
     width: 52%;
